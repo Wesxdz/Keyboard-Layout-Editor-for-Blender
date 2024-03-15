@@ -101,8 +101,9 @@ def add_curve(key: Key, curve, text_length: int, label_material_name: str, label
     apply_modifier("Boolean")
     data.objects.remove(cube)
 
-    for edge in context.object.data.edges:
-        edge.crease = 1
+    # https://developer.blender.org/docs/release_notes/4.0/python_api/
+    # for edge in context.object.data.edges:
+        # edge.crease = 1
 
     curve.location[2] += CAP_THICKNESS
 

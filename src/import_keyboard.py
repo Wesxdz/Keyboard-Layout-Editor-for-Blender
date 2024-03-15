@@ -86,7 +86,7 @@ def read(filepath: str):
     # get the current scene and change display device so colors are accurate
     context = bpy.context
     scn = context.scene
-    scn.display_settings.display_device = "None"
+    # scn.display_settings.display_device = "None"
     scn.render.engine = 'CYCLES'
 
     if hasattr(bpy.data, "collections"):
